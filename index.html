@@ -166,7 +166,7 @@ section{padding:72px 0}
 .estr .frame video.on{opacity:1}
 .estr .frame::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(20,20,20,.6))}
 .estr .cap{position:absolute;left:16px;bottom:14px;z-index:1;font-size:11px;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--txt)}
-.estr .txt{margin-top:24px}
+.estr .txt{margin-top:8px}
 .estr .txt p{color:var(--txt);max-width:52ch}
 .provas{margin-top:24px;display:flex;flex-direction:column}
 .provas div{padding:12px 0;border-top:1px solid var(--hair)}
@@ -329,7 +329,7 @@ footer{border-top:1px solid var(--hair);padding:24px var(--gut) max(28px,env(saf
   .sint .row .t{padding-left:0}
   .sint .row h3{font-size:20px;line-height:28px}.sint .row p{font-size:17px;line-height:26px;margin-top:6px}
   .estr .frame{margin-top:0;max-width:470px}
-  .estr .txt{margin-top:0}.estr .txt p{font-size:17px;line-height:26px}
+  .estr .txt{margin-top:0;max-width:720px}.estr .txt p{font-size:17px;line-height:26px}
   .provas{flex-direction:row;margin-top:32px}
   .provas div{padding:0 32px;border:0;border-left:1px solid var(--hair)}
   .provas div:first-child{padding-left:0;border-left:0}.provas div:last-child{border-bottom:0}
@@ -491,15 +491,8 @@ footer{border-top:1px solid var(--hair);padding:24px var(--gut) max(28px,env(saf
   </section>
 
   <section class="estr" id="estrategista">
-    <div class="wrap g2">
-      <div>
-        <p class="eyebrow">O estrategista</p>
-        <div class="frame" role="img" aria-label="Ben Hur Andrade palestrando" data-reveal>
-          <img src="assets/poster-2.jpg" alt="" width="404" height="720" loading="lazy" decoding="async">
-          <video id="portrait" muted playsinline loop preload="none" disablepictureinpicture aria-hidden="true"><source src="assets/ben-hur-2.mp4" type="video/mp4"></video>
-          <span class="cap">Ben Hur Andrade · Belo Horizonte</span>
-        </div>
-      </div>
+    <div class="wrap">
+      <p class="eyebrow">O estrategista</p>
       <div class="txt">
         <h2 class="h" data-reveal>Quem está do outro lado da mesa.</h2>
         <p class="lead" data-reveal style="color:var(--txt);margin-top:20px">Há 15 anos trabalho nos bastidores: marcas e empresas de grande porte, mais de 200 operações orientadas, 9 segmentos. Esse trabalho agora é aberto por aplicação. Cada perfil passa pela minha mesa antes de qualquer reunião, e o que não encaixa eu recuso. Minha especialidade é uma só: tirar o dono do centro e colocar processo no lugar.</p>
