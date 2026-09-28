@@ -609,7 +609,7 @@ footer{border-top:1px solid var(--hair);padding:24px var(--gut) max(28px,env(saf
       <p>Sua aplicação está na fila de análise. Em até 3 dias úteis você recebe a resposta no WhatsApp que informou: com fit, marcamos a reunião de 30 minutos comigo; sem fit, você também fica sabendo.</p>
       <p>Enquanto espera, salve meu WhatsApp para a mensagem não cair no filtro e separe faturamento, ticket e origem das vendas dos últimos 3 meses. A conversa começa por aí.</p>
       <p class="tag">Análise individual · Resposta em até 3 dias úteis</p>
-      <div class="acts"><button type="button" class="btn pri" id="doneClose">Voltar ao início</button><a class="btn ghost" href="https://wa.me/message/ZZ5VYNEGKG4BM1" rel="noopener">Salvar o WhatsApp</a></div>
+      <div class="acts"><button type="button" class="btn pri" id="doneClose">Voltar ao início</button><a class="btn ghost" href="https://wa.me/5511951751968" rel="noopener">Salvar o WhatsApp</a></div>
     </div>
   </div>
 </div>
@@ -802,7 +802,7 @@ footer{border-top:1px solid var(--hair);padding:24px var(--gut) max(28px,env(saf
     var req=dry?new Promise(function(r){setTimeout(function(){r({ok:true})},900)}):fetch(SUPA+'/rest/v1/applications',{method:'POST',headers:{'Content-Type':'application/json','apikey':ANON,'Authorization':'Bearer '+ANON,'Prefer':'return=minimal'},body:JSON.stringify(payload)});
     req.then(function(r){if(!r.ok)throw new Error('http '+r.status);finish()}).catch(function(){
       sending=false;fails++;btn.removeAttribute('aria-disabled');btn.removeAttribute('aria-busy');btn.textContent='Enviar aplicação';
-      alertEl.innerHTML='Não consegui enviar sua aplicação. Tente de novo em alguns segundos.'+(fails>=3?' Se repetir, <a href="https://wa.me/message/ZZ5VYNEGKG4BM1" rel="noopener">me chame no WhatsApp</a>.':'');alertEl.classList.add('show');
+      alertEl.innerHTML='Não consegui enviar sua aplicação. Tente de novo em alguns segundos.'+(fails>=3?' Se repetir, <a href="https://wa.me/5511951751968" rel="noopener">me chame no WhatsApp</a>.':'');alertEl.classList.add('show');
     });
   });
   var finish=function(){
